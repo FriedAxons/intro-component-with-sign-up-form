@@ -82,6 +82,16 @@ form .form-input-lname.invalid,
 form .email.invalid,
 form .password.invalid {
   border: 2px solid hsl(0, 100%, 74%);
+  background-image: url(images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+form .form-input-fname.invalid::placeholder,
+form .form-input-lname.invalid::placeholder,
+form .email.invalid::placeholder,
+form .password.invalid::placeholder {
+  opacity: 0;
 }
 
 form .warning-text-fname,
@@ -95,6 +105,13 @@ form .warning-text-password {
   padding: 5px;
   font-style: italic;
   color: hsl(0, 100%, 74%);
+}
+
+form .warning-text-fname.invalid,
+form .warning-text-lname.invalid,
+form .warning-text-email.invalid,
+form .warning-text-password.invalid {
+  display: block;
 }
 
 input {
