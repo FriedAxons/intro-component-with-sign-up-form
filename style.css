@@ -77,25 +77,23 @@ form .submit {
   cursor: pointer;
 }
 
-form .warning-text {
+form .form-input-fname.invalid,
+form .form-input-lname.invalid,
+form .email.invalid,
+form .password.invalid {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+form .warning-text-fname,
+form .warning-text-lname,
+form .warning-text-email,
+form .warning-text-password {
   display: none;
   font-size: 12px;
   width: 86%;
   text-align: right;
   padding: 5px;
   font-style: italic;
-  color: hsl(0, 100%, 74%);
-}
-
-form .terms-and-services-text {
-  font-size: 12px;
-  margin-top: 17px;
-  color: hsl(246, 25%, 77%);
-}
-
-form .terms-and-services-link {
-  text-decoration: none;
-  font-weight: bold;
   color: hsl(0, 100%, 74%);
 }
 
@@ -113,6 +111,18 @@ input:focus {
   border-color: hsl(248, 32%, 49%);
   outline: hsl(248, 22%, 93%);
   color: hsl(249, 10%, 26%);
+}
+
+form .terms-and-services-text {
+  font-size: 12px;
+  margin-top: 17px;
+  color: hsl(246, 25%, 77%);
+}
+
+form .terms-and-services-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(0, 100%, 74%);
 }
 
 footer {
