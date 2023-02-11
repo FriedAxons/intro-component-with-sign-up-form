@@ -147,3 +147,6 @@ footer {
   bottom: 0;
   color: white;
 }
+
+@media screen and (max-width: 500px) {
+}
