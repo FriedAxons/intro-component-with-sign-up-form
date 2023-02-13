@@ -149,4 +149,30 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-text {
+    width: 70vw;
+    margin-bottom: 100px;
+  }
+
+  .main-text h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .main-text p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .form {
+    margin: 0;
+    height: 40vh;
+    width: 65vw;
+  }
 }
