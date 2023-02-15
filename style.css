@@ -43,7 +43,7 @@ main {
   border-radius: 10px;
   text-align: center;
   font-size: 14px;
-  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.15);
   letter-spacing: 1px;
 }
 
@@ -66,15 +66,20 @@ main {
   font-size: 10px;
 }
 
-form .submit {
+.submit {
   margin-top: 20px;
-  width: 87%;
+  width: 86.5%;
   color: white;
   text-transform: uppercase;
   border: none;
   background-color: hsl(154, 59%, 51%);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  padding: 18px 20px;
+}
+
+.submit:hover {
+  background-color: rgba(56, 204, 140, 0.7);
 }
 
 form .form-input-fname.invalid,
@@ -155,24 +160,56 @@ footer {
   }
 
   .main-text {
-    width: 70vw;
-    margin-bottom: 100px;
+    width: 75vw;
+    position: relative;
+    top: -120px;
   }
 
   .main-text h1 {
-    font-size: 34px;
+    font-size: 36px;
     text-align: center;
   }
 
   .main-text p {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 100;
     text-align: center;
     line-height: 25px;
   }
 
-  .form {
+  main .form {
     margin: 0;
-    height: 40vh;
-    width: 65vw;
+    height: 34vh;
+    width: 60vw;
+    padding: 0px 5px 95px;
+    line-height: 23px;
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+  }
+
+  .form .form-banner {
+    position: relative;
+    top: -33px;
+    padding: 16px 55px;
+  }
+
+  .form input {
+    margin: 8px;
+    padding: 15px 0px 15px 20px;
+  }
+
+  form .terms-and-services-text {
+    width: 44vw;
+    margin: 5px 0px 0px;
+  }
+
+  .form .submit {
+    padding: 18px 20px;
+  }
+
+  .form .form-banner {
+    width: 40vw;
+    line-height: 25px;
   }
 }
